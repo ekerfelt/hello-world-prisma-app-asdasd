@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "bun",
+  "scripts": {
+    "generate": "npx prisma generate --schema=dbs/main/schema.prisma",
+    "migrate": "npx prisma migrate dev --schema=dbs/main/schema.prisma",
+    "postinstall": "npx prisma generate --schema=dbs/main/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.10.1",
+    "encore.dev": "^1.48.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
