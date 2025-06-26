@@ -4,6 +4,7 @@
   "type": "module",
   "packageManager": "bun",
   "scripts": {
+    "build": "cd ../frontend \u0026\u0026 bun install \u0026\u0026 vite build --outDir=../backend/frontend/dist",
     "generate": "npx prisma generate --schema=dbs/main/schema.prisma",
     "migrate": "npx prisma migrate dev --schema=dbs/main/schema.prisma",
     "postinstall": "npx prisma generate --schema=dbs/main/schema.prisma"
